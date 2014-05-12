@@ -1,0 +1,19 @@
+/* Stylesheet here */
+html {
+  background-color: #ecf0f1;
+}
+
+header {
+  color: #2c3e50;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+  background-color: white;
+  padding: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+#main_body {
+  padding: 0 10em;
+  background-color: #bdc3c7;
+}
