@@ -30,14 +30,20 @@ function printResult(resultJSON) {
     var resultCount = resultJSON.resultCount;
 
     $('#main_body').empty();
-    for (var i = 0; i < resultCount; i++) {
-        artworkURL = resultJSON.results[i].artworkUrl60;
-        artworkURLClean = artworkURL.substring(0, artworkURL.length - 12);
-        artistName = resultJSON.results[i].artistName;
-        artistName = (artistName.length > 30 ? artistName.substring(0, 30)+ '...' : artistName);
+    if (resultCount > 0) {
+        for (var i = 0; i < resultCount; i++) {
+            var artworkURL = resultJSON.results[i].artworkUrl60;
+            var artworkURLClean = artworkURL.substring(0, artworkURL.length - 12);
+            var artistName = resultJSON.results[i].artistName;
+            artistName = (artistName.length > 30 ? artistName.substring(0, 30) + '...' : artistName);
 
-        var html = "<div class='result_item'><div class='album_art'><img src='" + resultJSON.results[i].artworkUrl100 + "' alt='" + resultJSON.results[i].collectionName + "' /></div><div class='album_info'><h2>" + resultJSON.results[i].collectionName + "</h2><h3>" + artistName + "</h3></div><div class='size_buttons'><a class='album_art_button small' target='new' href='" + artworkURLClean + '400x400-75.jpg' + "'></a><a class='album_art_button medium' target='new' href='" + artworkURLClean + '600x600-75.jpg' + "'></a><a class='album_art_button large' target='new' href='" + artworkURLClean + '1200x1200-75.jpg' + "'></a></div></div>";
-        $('#main_body').append(html);
+            var html = "<div class='result_item'><div class='album_art'><img src='" + resultJSON.results[i].artworkUrl100 + "' alt='" + resultJSON.results[i].collectionName + "' /></div><div class='album_info'><h2>" + resultJSON.results[i].collectionName + "</h2><h3>" + artistName + "</h3></div><div class='size_buttons'><a class='album_art_button small' target='new' href='" + artworkURLClean + '400x400-75.jpg' + "'></a><a class='album_art_button medium' target='new' href='" + artworkURLClean + '600x600-75.jpg' + "'></a><a class='album_art_button large' target='new' href='" + artworkURLClean + '1200x1200-75.jpg' + "'></a></div></div>";
+            $('#main_body').append(html);
+        }
+    }
+    else {
+    	var html = "<div id='no_result'>Sorry, no results found for '<strong>" + $('#artist_name').val() +"</strong>'</div>";
+    	$('#main_body').append(html);
     }
 
 }

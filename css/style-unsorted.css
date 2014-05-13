@@ -121,3 +121,10 @@ input[type='text'] {
   width: 18px;
   border: 1px solid #68b3e5;
 }
+
+#no_result {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 200;
+  color: #c0392b;
+}

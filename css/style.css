@@ -162,3 +162,13 @@ input[type='text']
 
     border: 1px solid #68b3e5;
 }
+
+#no_result
+{
+    font-size: 2em;
+    font-weight: 200;
+
+    text-align: center;
+
+    color: #c0392b;
+}
