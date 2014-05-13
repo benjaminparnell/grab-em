@@ -33,7 +33,10 @@ function printResult(resultJSON) {
     for (var i = 0; i < resultCount; i++) {
         artworkURL = resultJSON.results[i].artworkUrl60;
         artworkURLClean = artworkURL.substring(0, artworkURL.length - 12);
-        var html = "<div class='result_item'><div class='album_art'><img src='" + resultJSON.results[i].artworkUrl100 + "' alt='" + resultJSON.results[i].collectionName + "' /></div><div class='album_info'><h2>" + resultJSON.results[i].collectionName + "</h2><h3>" + resultJSON.results[i].artistName + "</h3></div><div class='size_buttons'><a class='album_art_button small' target='new' href='" + artworkURLClean + '400x400-75.jpg' + "'></a><a class='album_art_button medium' target='new' href='" + artworkURLClean + '600x600-75.jpg' + "'></a><a class='album_art_button large' target='new' href='" + artworkURLClean + '1200x1200-75.jpg' + "'></a></div></div>";
+        artistName = resultJSON.results[i].artistName;
+        artistName = (artistName.length > 30 ? artistName.substring(0, 30)+ '...' : artistName);
+
+        var html = "<div class='result_item'><div class='album_art'><img src='" + resultJSON.results[i].artworkUrl100 + "' alt='" + resultJSON.results[i].collectionName + "' /></div><div class='album_info'><h2>" + resultJSON.results[i].collectionName + "</h2><h3>" + artistName + "</h3></div><div class='size_buttons'><a class='album_art_button small' target='new' href='" + artworkURLClean + '400x400-75.jpg' + "'></a><a class='album_art_button medium' target='new' href='" + artworkURLClean + '600x600-75.jpg' + "'></a><a class='album_art_button large' target='new' href='" + artworkURLClean + '1200x1200-75.jpg' + "'></a></div></div>";
         $('#main_body').append(html);
     }
 

@@ -10,8 +10,8 @@
 			/ this is where we put the header bar
 			Grab 'em
 		%section#search_box
-			%form{:name => 'search_artwork'}
-				%input{:type => 'text', :id => 'artist_name'}
+			%form{:name => 'search_artwork', :action => 'javascript:performSearch()'}
+				%input{:type => 'text', :id => 'artist_name', :placeholder => 'enter search term'}
 				-# %input{:type => 'button', :value => 'Search', :onClick => 'performSearch()'}
 			%a{:id => 'search_button', :href => 'javascript:performSearch()'} Search
 			/ search box here
