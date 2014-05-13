@@ -4,19 +4,19 @@ html {
 }
 
 header {
-  color: #2c3e50;
+  color: #3d9ddd;
   font-size: 1.5em;
   font-weight: 200;
   text-align: center;
+  text-transform: uppercase;
   background-color: white;
   padding: 0.6em;
-  border-bottom: 1px #3d9ddd solid;
 }
 
 #search_box {
-  margin: 1em 20em;
+  margin: 0 20em 1em 20em;
   padding: 2em;
-  background-color: #bdc3c7;
+  background-color: #d9dcde;
   text-align: center;
 }
 
@@ -79,11 +79,12 @@ input[type='text'] {
 .size_buttons {
   display: block;
   float: left;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 .album_art_button {
   display: inline-block;
-  margin: 0.1em;
   background-color: #3d9ddd;
 }
 
@@ -94,9 +95,9 @@ input[type='text'] {
 }
 
 .small:hover {
-  height: 8px;
-  width: 8px;
-  border: 1px solid #68b3e5;
+  height: 6px;
+  width: 6px;
+  border: 2px solid #1b6799;
 }
 
 .medium {
@@ -106,9 +107,9 @@ input[type='text'] {
 }
 
 .medium:hover {
-  height: 13px;
-  width: 13px;
-  border: 1px solid #68b3e5;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #1b6799;
 }
 
 .large {
@@ -117,9 +118,9 @@ input[type='text'] {
 }
 
 .large:hover {
-  height: 18px;
-  width: 18px;
-  border: 1px solid #68b3e5;
+  height: 16px;
+  width: 16px;
+  border: 2px solid #1b6799;
 }
 
 #no_result {

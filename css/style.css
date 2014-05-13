@@ -12,20 +12,20 @@ header
     padding: .6em;
 
     text-align: center;
+    text-transform: uppercase;
 
-    color: #2c3e50;
-    border-bottom: 1px #3d9ddd solid;
+    color: #3d9ddd;
     background-color: white;
 }
 
 #search_box
 {
-    margin: 1em 20em;
+    margin: 0 20em 1em 20em;
     padding: 2em;
 
     text-align: center;
 
-    background-color: #bdc3c7;
+    background-color: #d9dcde;
 }
 
 input[type='text']
@@ -106,15 +106,17 @@ input[type='text']
 
 .size_buttons
 {
+    font-size: .8em;
+
     display: block;
     float: left;
+
+    text-transform: uppercase;
 }
 
 .album_art_button
 {
     display: inline-block;
-
-    margin: .1em;
 
     background-color: #3d9ddd;
 }
@@ -128,10 +130,10 @@ input[type='text']
 
 .small:hover
 {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
 
-    border: 1px solid #68b3e5;
+    border: 2px solid #1b6799;
 }
 
 .medium
@@ -143,10 +145,10 @@ input[type='text']
 
 .medium:hover
 {
-    width: 13px;
-    height: 13px;
+    width: 11px;
+    height: 11px;
 
-    border: 1px solid #68b3e5;
+    border: 2px solid #1b6799;
 }
 
 .large
@@ -157,10 +159,10 @@ input[type='text']
 
 .large:hover
 {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 
-    border: 1px solid #68b3e5;
+    border: 2px solid #1b6799;
 }
 
 #no_result
