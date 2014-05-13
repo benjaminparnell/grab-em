@@ -23,7 +23,36 @@ header
     margin: 1em 20em;
     padding: 2em;
 
+    text-align: center;
+
     background-color: #bdc3c7;
+}
+
+input[type='text']
+{
+    font-size: 1.1em;
+    font-weight: 200;
+
+    padding: .2em;
+}
+
+#search_button
+{
+    display: inline-block;
+
+    margin-top: 1em;
+    padding: .5em 4em;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+    background-color: #3d9ddd;
+}
+
+#search_button:hover
+{
+    background-color: #2284c5;
 }
 
 #main_body

@@ -17,6 +17,27 @@ header {
   margin: 1em 20em;
   padding: 2em;
   background-color: #bdc3c7;
+  text-align: center;
+}
+
+input[type='text'] {
+  font-size: 1.1em;
+  padding: 0.2em;
+  font-weight: 200;
+}
+
+#search_button {
+  margin-top: 1em;
+  padding: 0.5em 4em;
+  background-color: #3d9ddd;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+#search_button:hover {
+  background-color: #2284c5;
 }
 
 #main_body {

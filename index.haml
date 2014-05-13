@@ -11,10 +11,9 @@
 			Grab 'em
 		%section#search_box
 			%form{:name => 'search_artwork'}
-				%label{:for => 'artist_name'} Artist Name
 				%input{:type => 'text', :id => 'artist_name'}
 				-# %input{:type => 'button', :value => 'Search', :onClick => 'performSearch()'}
-			%a{:href => 'javascript:performSearch()'} Search
+			%a{:id => 'search_button', :href => 'javascript:performSearch()'} Search
 			/ search box here
 		%section#main_body
 			/ search results here
