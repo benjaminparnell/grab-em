@@ -12,12 +12,20 @@
       Grab 'em
     </header>
     <section id='search_box'>
+      <form name='search_artwork'>
+        <label for='artist_name'>Artist Name</label>
+        <input id='artist_name' type='text'>
+      </form>
+      <a href='javascript:performSearch()'>Search</a>
       <!-- search box here -->
     </section>
     <section id='main_body'>
       <!-- search results here -->
     </section>
+  </body>
+  <footer>
     <script src='js/jquery-1.11.1.min.js'></script>
     <script src='js/script.js'></script>
-  </body>
+    <div id='search_script'></div>
+  </footer>
 </html>

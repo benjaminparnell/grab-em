@@ -9,18 +9,127 @@ header
     font-size: 1.5em;
     font-weight: 200;
 
-    margin-bottom: .8em;
     padding: .6em;
 
     text-align: center;
 
     color: #2c3e50;
+    border-bottom: 1px #3d9ddd solid;
     background-color: white;
+}
+
+#search_box
+{
+    margin: 1em 20em;
+    padding: 2em;
+
+    background-color: #bdc3c7;
 }
 
 #main_body
 {
-    padding: 0 10em;
+    padding: 0 20em;
 
-    background-color: #bdc3c7;
+    background-color: #ecf0f1;
+}
+
+.result_item
+{
+    height: 102px;
+    margin: .5em 0;
+    padding: .5em;
+
+    background-color: white;
+}
+
+.album_info
+{
+    display: block;
+}
+.album_info h3
+{
+    font-size: 1.2em;
+    font-weight: 200;
+
+    display: inline-block;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+.album_info h2
+{
+    font-size: 1.4em;
+    font-weight: 400;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.album_art
+{
+    float: left;
+
+    height: 100px;
+    margin-right: .5em;
+
+    border: 1px solid #bdc3c7;
+}
+
+.size_buttons
+{
+    display: block;
+    float: left;
+}
+
+.album_art_button
+{
+    display: inline-block;
+
+    margin: .1em;
+
+    background-color: #3d9ddd;
+}
+
+.small
+{
+    width: 10px;
+    height: 10px;
+    margin-right: .3em;
+}
+
+.small:hover
+{
+    width: 8px;
+    height: 8px;
+
+    border: 1px solid #68b3e5;
+}
+
+.medium
+{
+    width: 15px;
+    height: 15px;
+    margin-right: .3em;
+}
+
+.medium:hover
+{
+    width: 13px;
+    height: 13px;
+
+    border: 1px solid #68b3e5;
+}
+
+.large
+{
+    width: 20px;
+    height: 20px;
+}
+
+.large:hover
+{
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid #68b3e5;
 }

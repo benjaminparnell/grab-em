@@ -2,6 +2,7 @@
 $kulay-bg: #ecf0f1
 $kulay-text: #2c3e50
 $kulay-search: #bdc3c7
+$kulay-blue: #3d9ddd
 
 html
 	background-color: $kulay-bg
@@ -13,8 +14,79 @@ header
 	text-align: center
 	background-color: #fff
 	padding: 0.6em
-	margin-bottom: 0.8em
+	border-bottom: 1px $kulay-blue solid
+
+#search_box
+	margin: 1em 20em
+	padding: 2em
+	background-color: $kulay-search
 
 #main_body
-	padding: 0 10em
-	background-color: $kulay-search
+	padding: 0 20em
+	background-color: $kulay-bg
+
+.result_item
+	padding: 0.5em
+	margin: 0.5em 0
+	height: 102px
+	background-color: #fff
+
+.album_info
+	display: block
+
+	h3
+		font-size: 1.2em
+		font-weight: 200
+		display: inline-block
+		-webkit-margin-before: 0
+		-webkit-margin-after: 0
+
+	h2
+		font-size: 1.4em
+		font-weight: 400
+		-webkit-margin-before: 0
+		-webkit-margin-after: 0
+
+.album_art
+	float: left
+	height: 100px
+	border: 1px solid $kulay-search
+	margin-right: 0.5em
+
+.size_buttons
+	display: block
+	float: left
+
+.album_art_button
+	display: inline-block
+	margin: 0.1em
+	background-color: $kulay-blue
+
+.small
+	height: 10px
+	width: 10px
+	margin-right: 0.3em
+
+.small:hover
+	height: 8px
+	width: 8px
+	border: 1px solid lighten($kulay-blue, 10%)
+
+.medium
+	height: 15px
+	width: 15px
+	margin-right: 0.3em
+
+.medium:hover
+	height: 13px
+	width: 13px
+	border: 1px solid lighten($kulay-blue, 10%)
+
+.large
+	height: 20px
+	width: 20px
+
+.large:hover
+	height: 18px
+	width: 18px
+	border: 1px solid lighten($kulay-blue, 10%)
