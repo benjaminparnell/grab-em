@@ -17,7 +17,20 @@
 			/ search box here
 		%section#main_body
 			/ search results here
+		%script{:id => 'template', :type => 'x-tmpl-mustache'}
+			.result_item
+				.album_art
+					%img{:src => '{{ artworkUrl100 }}', :alt => '{{ collectionName }}'}
+				.album_info
+					%h2
+						{{ collectionName }}
+					%h3
+						{{ artistName }}
+				.size_buttons
+					Album art:
+					%a.album_art_button.small{href: '{{ artworkURLClean }}400x400-75.jpg', target: 'new'}
+					%a.album_art_button.medium{href: '{{ artworkURLClean }}600x600-75.jpg', target: 'new'}
+					%a.album_art_button.large{href: '{{ artworkURLClean }}1200x1200-75.jpg', target: 'new'}
 	%footer
-		%script{:src => 'js/jquery-1.11.1.min.js'}
-		%script{:src => 'js/script.js'}
+		%script{:src => 'js/bundle.js'}
 		%div{:id => 'search_script'}
