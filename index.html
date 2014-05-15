@@ -21,10 +21,30 @@
     <section id='main_body'>
       <!-- search results here -->
     </section>
+    <script id='template' type='x-tmpl-mustache'>
+      <div class='result_item'>
+        <div class='album_art'>
+          <img alt='{{ collectionName }}' src='{{ artworkUrl100 }}'>
+        </div>
+        <div class='album_info'>
+          <h2>
+            {{ collectionName }}
+          </h2>
+          <h3>
+            {{ artistName }}
+          </h3>
+        </div>
+        <div class='size_buttons'>
+          Album art:
+          <a class='album_art_button small' href='{{ artworkURLClean }}400x400-75.jpg' target='new'></a>
+          <a class='album_art_button medium' href='{{ artworkURLClean }}600x600-75.jpg' target='new'></a>
+          <a class='album_art_button large' href='{{ artworkURLClean }}1200x1200-75.jpg' target='new'></a>
+        </div>
+      </div>
+    </script>
   </body>
   <footer>
-    <script src='js/jquery-1.11.1.min.js'></script>
-    <script src='js/script.js'></script>
+    <script src='js/bundle.js'></script>
     <div id='search_script'></div>
   </footer>
 </html>

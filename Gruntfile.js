@@ -72,6 +72,12 @@ module.exports = function( grunt ) {
                     config: 'csscomb.json'
                 }
             }
+        },
+        concat: {
+          dist: {
+            src: ['js/*.js'],
+            dest: 'js/bundle.js',
+          }
         }
     } );
 
@@ -79,4 +85,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
     grunt.loadNpmTasks( 'grunt-contrib-haml' );
     grunt.loadNpmTasks( 'grunt-csscomb' );
+    grunt.loadNpmTasks( 'grunt-contrib-concat' );
+
+    grunt.registerTask('default', ['haml', 'sass', 'csscomb', 'concat'])
 };
