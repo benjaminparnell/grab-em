@@ -78,8 +78,15 @@ function printResult(resultJSON) {
                 });
             $('#main_body').append(html);
         }
-        for(var i = 0; i < resultCount; i++)
-            $('#info_' + i).fadeIn();
+        var counter = 0;
+        var fadeInterval = setInterval( function() {
+            if(counter < resultCount) {
+                $('#info_' + counter).fadeIn();
+                counter++;
+            }
+            else
+                clearInterval(fadeInterval);
+        },100);
     } else {
         var html = "<div id='no_result'>Sorry, no results found for '<strong>" +
           $('#artist_name').val() + "</strong>'</div>";
