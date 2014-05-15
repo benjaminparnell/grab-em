@@ -1,1 +1,141 @@
-html{background-color:#ecf0f1}header{color:#3d9ddd;font-size:1.5em;font-weight:200;text-align:center;text-transform:uppercase;background-color:#fff;padding:0.6em}#search_box{margin:0 20em 1em 20em;padding:2em;background-color:#d9dcde;text-align:center}input[type='text']{font-size:1.1em;padding:0.2em;font-weight:200}#search_button{margin-top:1em;padding:0.5em 4em;background-color:#3d9ddd;display:inline-block;text-transform:uppercase;text-decoration:none;color:#fff}#search_button:hover{background-color:#2284c5}#main_body{padding:0 20em;background-color:#ecf0f1}.result_item{padding:0.5em;margin:0.5em 0;height:102px;background-color:#fff}.album_info{display:block}.album_info h3{font-size:1.2em;font-weight:200;display:inline-block;-webkit-margin-before:0;-webkit-margin-after:0}.album_info h2{font-size:1.4em;font-weight:400;-webkit-margin-before:0;-webkit-margin-after:0}.album_art{float:left;height:100px;border:1px solid #bdc3c7;margin-right:0.5em}.size_buttons{display:block;float:left;text-transform:uppercase;font-size:0.8em}.album_art_button{display:inline-block;background-color:#3d9ddd}.small{height:10px;width:10px;margin-right:0.3em}.small:hover{height:6px;width:6px;border:2px solid #1b6799}.medium{height:15px;width:15px;margin-right:0.3em}.medium:hover{height:11px;width:11px;border:2px solid #1b6799}.large{height:20px;width:20px}.large:hover{height:16px;width:16px;border:2px solid #1b6799}#no_result{text-align:center;font-size:2em;font-weight:200;color:#c0392b}
+html {
+  background-color: #ecf0f1;
+}
+
+header {
+  color: #3d9ddd;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 0.6em;
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 98%;
+  -webkit-box-shadow: 0px -3px 13px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0px -3px 13px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px -3px 13px 0px rgba(50, 50, 50, 0.3);
+}
+
+#search_box {
+  margin: 3.5em auto 0 auto;
+  padding: 4em 0;
+  background-color: #d9dcde;
+  text-align: center;
+}
+
+input[type='text'] {
+  font-size: 1.1em;
+  padding: 0.2em;
+  font-weight: 200;
+}
+
+#search_button {
+  margin-top: 1em;
+  padding: 0.5em 4em;
+  background-color: #3d9ddd;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+#search_button:hover {
+  background-color: #2284c5;
+}
+
+#main_body {
+  width: 61.5em;
+  margin: 0 auto;
+  background-color: #ecf0f1;
+}
+
+.result_item {
+  padding: 0.5em;
+  margin: 0.25em;
+  height: 102px;
+  width: 19em;
+  background-color: white;
+  display: inline-block;
+  float: left;
+}
+
+.album_info {
+  display: block;
+}
+.album_info h3 {
+  font-size: 1.2em;
+  font-weight: 200;
+  display: inline-block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.album_info h2 {
+  font-size: 1.4em;
+  font-weight: 400;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.album_art {
+  float: left;
+  height: 100px;
+  border: 1px solid #bdc3c7;
+  margin-right: 0.5em;
+}
+
+.size_buttons {
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.album_art_button {
+  display: inline-block;
+  background-color: #3d9ddd;
+}
+
+.small {
+  height: 10px;
+  width: 10px;
+  margin-right: 0.3em;
+}
+
+.small:hover {
+  height: 6px;
+  width: 6px;
+  border: 2px solid #1b6799;
+}
+
+.medium {
+  height: 15px;
+  width: 15px;
+  margin-right: 0.3em;
+}
+
+.medium:hover {
+  height: 11px;
+  width: 11px;
+  border: 2px solid #1b6799;
+}
+
+.large {
+  height: 20px;
+  width: 20px;
+}
+
+.large:hover {
+  height: 16px;
+  width: 16px;
+  border: 2px solid #1b6799;
+}
+
+#no_result {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 200;
+  color: #c0392b;
+}
