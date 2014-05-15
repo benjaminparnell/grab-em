@@ -92,7 +92,7 @@ input[type='text']
 }
 .album_info h3
 {
-    font-size: .8em;
+    font-size: .7em;
     font-weight: 200;
 
     display: inline-block;
@@ -102,7 +102,7 @@ input[type='text']
 }
 .album_info h2
 {
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 400;
 
     -webkit-margin-before: 0;
@@ -120,9 +120,21 @@ input[type='text']
     border: 1px solid #bdc3c7;
 }
 
+.size_buttons_container
+{
+    position: relative;
+    z-index: 1;
+
+    height: 68%;
+}
+
 .size_buttons
 {
-    font-size: .8em;
+    font-size: .6em;
+
+    position: absolute;
+    bottom: 0;
+    left: 114px;
 
     display: block;
     float: left;
@@ -139,36 +151,36 @@ input[type='text']
 
 .small
 {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
 }
 
 .small:hover
 {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
 
-    border: 2px solid #1b6799;
+    background-color: #1b6799;
 }
 
 .medium
 {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
 }
 
 .medium:hover
 {
-    width: 11px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
 
-    border: 2px solid #1b6799;
+    background-color: #1b6799;
 }
 
 .large
 {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 
 .large:hover
@@ -176,15 +188,15 @@ input[type='text']
     width: 16px;
     height: 16px;
 
-    border: 2px solid #1b6799;
+    background-color: #1b6799;
 }
 
 .orig
 {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 
-    background-color: #c0392b;
+    background-color: #d14233;
 }
 
 .orig:hover
@@ -192,7 +204,7 @@ input[type='text']
     width: 16px;
     height: 16px;
 
-    border: 2px solid #6d2018;
+    background-color: #ab3326;
 }
 
 #no_result

@@ -39,7 +39,7 @@ function performSearch() {
             country: 'GB',
             media: 'music',
             entity: 'album',
-            // limit: 20,
+            // limit: 25,
             callback: 'printResult'
         };
         params = urlEncode(params)
@@ -62,11 +62,11 @@ function printResult(resultJSON) {
         for (var i = 0; i < resultCount; i++) {
             var artworkURL = resultJSON.results[i].artworkUrl60
               , artworkURLClean = artworkURL.substring(0, artworkURL.length - 12)
-              , artistName = resultJSON.results[i].artistName
-              , artistName = (artistName.length > 30 ? artistName.substring(0, 30) + '...' : artistName)
-              , collectionName = resultJSON.results[i].collectionName
+              , artistName = resultJSON.results[i].artistName.trim()
+              , artistName = (artistName.length > 25 ? artistName.substring(0, 25).trim() + '...' : artistName)
+              , collectionName = resultJSON.results[i].collectionName.trim()
               , originalArt = (artworkURLClean.search(/Feature/gi) == -1 ? 0 : 1)
-              , collectionName = (collectionName.length > 30 ? collectionName.substring(0, 30) + '...' : collectionName)
+              , collectionName = (collectionName.length > 25 ? collectionName.substring(0, 25).trim() + '...' : collectionName)
               , html = Mustache.render(template, {
                     //artworkUrl100: resultJSON.results[i].artworkUrl100,
                     artworkUrl100: artworkURLClean + '200x200-75.jpg',

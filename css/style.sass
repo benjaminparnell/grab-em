@@ -3,6 +3,10 @@ $kulay-text: #2c3e50
 $kulay-search: #bdc3c7
 $kulay-blue: #3d9ddd
 $kulay-red: #c0392b
+ 
+@mixin size_buttons_box($size)
+	height: $size
+	width: $size
 
 html
 	background-color: $kulay-bg
@@ -66,14 +70,14 @@ input[type='text']
 	display: block
 
 	h3
-		font-size: 0.8em
+		font-size: 0.7em
 		font-weight: 200
 		display: inline-block
 		-webkit-margin-before: 0
 		-webkit-margin-after: 0
 
 	h2
-		font-size: 1em
+		font-size: 0.8em
 		font-weight: 400
 		-webkit-margin-before: 0
 		-webkit-margin-after: 0
@@ -85,52 +89,52 @@ input[type='text']
 	border: 1px solid $kulay-search
 	margin-right: 0.5em
 
+.size_buttons_container
+	position: relative
+	height: 68%
+	z-index: 1
+
 .size_buttons
 	display: block
 	float: left
 	text-transform: uppercase
-	font-size: 0.8em
+	font-size: 0.6em
+	position: absolute
+	bottom: 0
+	left: 114px
 
 .album_art_button
 	display: inline-block
 	background-color: $kulay-blue
 
 .small
-	height: 10px
-	width: 10px
+	@include size_buttons_box(8px)
 
 .small:hover
-	height: 6px
-	width: 6px
-	border: 2px solid darken($kulay-blue, 20%)
+	@include size_buttons_box(8px)
+	background-color: darken($kulay-blue, 20%)
 
 .medium
-	height: 15px
-	width: 15px
+	@include size_buttons_box(12px)
 
 .medium:hover
-	height: 11px
-	width: 11px
-	border: 2px solid darken($kulay-blue, 20%)
+	@include size_buttons_box(12px)
+	background-color: darken($kulay-blue, 20%)
 
 .large
-	height: 20px
-	width: 20px
+	@include size_buttons_box(16px)
 
 .large:hover
-	height: 16px
-	width: 16px
-	border: 2px solid darken($kulay-blue, 20%)
+	@include size_buttons_box(16px)
+	background-color: darken($kulay-blue, 20%)
 
 .orig
-	height: 20px
-	width: 20px
-	background-color: $kulay-red
+	@include size_buttons_box(16px)
+	background-color: lighten($kulay-red, 5%)
 
 .orig:hover
-	height: 16px
-	width: 16px
-	border: 2px solid darken($kulay-red, 20%)
+	@include size_buttons_box(16px)
+	background-color: darken($kulay-red, 5%)
 
 #no_result
 	text-align: center

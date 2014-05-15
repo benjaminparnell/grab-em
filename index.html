@@ -34,14 +34,16 @@
             {{ artistName }}
           </h3>
         </div>
-        <div class='size_buttons'>
-          Album art:
-          <a class='album_art_button small' href='{{ artworkURLClean }}400x400-75.jpg' target='new'></a>
-          <a class='album_art_button medium' href='{{ artworkURLClean }}600x600-75.jpg' target='new'></a>
-          <a class='album_art_button large' href='{{ artworkURLClean }}1200x1200-75.jpg' target='new'></a>
-          {{#originalArt}}
-          <a class='album_art_button orig' href='{{ artworkURLClean }}jpg' target='new'></a>
-          {{/originalArt}}
+        <div class='size_buttons_container'>
+          <div class='size_buttons'>
+            Album art size:
+            <a class='album_art_button small' href='{{ artworkURLClean }}400x400-75.jpg' target='new'></a>
+            <a class='album_art_button medium' href='{{ artworkURLClean }}600x600-75.jpg' target='new'></a>
+            <a class='album_art_button large' href='{{ artworkURLClean }}1200x1200-75.jpg' target='new'></a>
+            {{#originalArt}}
+            <a class='album_art_button orig' href='{{ artworkURLClean }}jpg' target='new'></a>
+            {{/originalArt}}
+          </div>
         </div>
       </div>
     </script>
