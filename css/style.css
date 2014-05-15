@@ -74,6 +74,7 @@ input[type='text']
 .result_item
 {
     display: inline-block;
+    display: none;
     float: left;
 
     width: 19em;

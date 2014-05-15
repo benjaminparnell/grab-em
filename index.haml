@@ -18,7 +18,7 @@
 		%section#main_body
 			/ search results here
 		%script{:id => 'template', :type => 'x-tmpl-mustache'}
-			.result_item
+			.result_item{:id => 'info_{{ itemNo }}'}
 				.album_art
 					%img{:src => '{{ artworkUrl100 }}', :alt => '{{ collectionName }}'}
 				.album_info

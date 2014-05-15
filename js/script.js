@@ -39,7 +39,7 @@ function performSearch() {
             country: 'GB',
             media: 'music',
             entity: 'album',
-            limit: 20,
+            // limit: 20,
             callback: 'printResult'
         };
         params = urlEncode(params)
@@ -70,14 +70,18 @@ function printResult(resultJSON) {
                     artworkUrl100: resultJSON.results[i].artworkUrl100,
                     collectionName: collectionName,
                     artistName: artistName,
-                    artworkURLClean: artworkURLClean
+                    artworkURLClean: artworkURLClean,
+                    itemNo: i
                 });
             $('#main_body').append(html);
         }
+        for(var i = 0; i < resultCount; i++)
+            $('#info_' + i).fadeIn();
     } else {
         var html = "<div id='no_result'>Sorry, no results found for '<strong>" +
           $('#artist_name').val() + "</strong>'</div>";
         $('#main_body').append(html);
     }
+
 
 }
