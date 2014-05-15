@@ -19,6 +19,7 @@ header
     text-align: center;
     text-transform: uppercase;
 
+    opacity: .97;
     color: #3d9ddd;
     background-color: white;
     -webkit-box-shadow: 0 -3px 13px 0 rgba(50, 50, 50, .3);
@@ -140,7 +141,6 @@ input[type='text']
 {
     width: 10px;
     height: 10px;
-    margin-right: .3em;
 }
 
 .small:hover
@@ -155,7 +155,6 @@ input[type='text']
 {
     width: 15px;
     height: 15px;
-    margin-right: .3em;
 }
 
 .medium:hover
@@ -178,6 +177,22 @@ input[type='text']
     height: 16px;
 
     border: 2px solid #1b6799;
+}
+
+.orig
+{
+    width: 20px;
+    height: 20px;
+
+    background-color: #c0392b;
+}
+
+.orig:hover
+{
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #6d2018;
 }
 
 #no_result

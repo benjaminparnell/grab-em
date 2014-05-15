@@ -65,6 +65,7 @@ function printResult(resultJSON) {
               , artistName = resultJSON.results[i].artistName
               , artistName = (artistName.length > 30 ? artistName.substring(0, 30) + '...' : artistName)
               , collectionName = resultJSON.results[i].collectionName
+              , originalArt = (artworkURLClean.search(/Feature/gi) == -1 ? 0 : 1)
               , collectionName = (collectionName.length > 30 ? collectionName.substring(0, 30) + '...' : collectionName)
               , html = Mustache.render(template, {
                     //artworkUrl100: resultJSON.results[i].artworkUrl100,
@@ -72,6 +73,7 @@ function printResult(resultJSON) {
                     collectionName: collectionName,
                     artistName: artistName,
                     artworkURLClean: artworkURLClean,
+                    originalArt: originalArt,
                     itemNo: i
                 });
             $('#main_body').append(html);

@@ -17,6 +17,7 @@ header {
   -webkit-box-shadow: 0px -3px 13px 0px rgba(50, 50, 50, 0.3);
   -moz-box-shadow: 0px -3px 13px 0px rgba(50, 50, 50, 0.3);
   box-shadow: 0px -3px 13px 0px rgba(50, 50, 50, 0.3);
+  opacity: 0.97;
 }
 
 #search_box {
@@ -103,7 +104,6 @@ input[type='text'] {
 .small {
   height: 10px;
   width: 10px;
-  margin-right: 0.3em;
 }
 
 .small:hover {
@@ -115,7 +115,6 @@ input[type='text'] {
 .medium {
   height: 15px;
   width: 15px;
-  margin-right: 0.3em;
 }
 
 .medium:hover {
@@ -133,6 +132,18 @@ input[type='text'] {
   height: 16px;
   width: 16px;
   border: 2px solid #1b6799;
+}
+
+.orig {
+  height: 20px;
+  width: 20px;
+  background-color: #c0392b;
+}
+
+.orig:hover {
+  height: 16px;
+  width: 16px;
+  border: 2px solid #6d2018;
 }
 
 #no_result {
