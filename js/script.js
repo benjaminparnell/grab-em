@@ -67,7 +67,8 @@ function printResult(resultJSON) {
               , collectionName = resultJSON.results[i].collectionName
               , collectionName = (collectionName.length > 30 ? collectionName.substring(0, 30) + '...' : collectionName)
               , html = Mustache.render(template, {
-                    artworkUrl100: resultJSON.results[i].artworkUrl100,
+                    //artworkUrl100: resultJSON.results[i].artworkUrl100,
+                    artworkUrl100: artworkURLClean + '200x200-75.jpg',
                     collectionName: collectionName,
                     artistName: artistName,
                     artworkURLClean: artworkURLClean,

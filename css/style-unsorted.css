@@ -20,7 +20,7 @@ header {
 }
 
 #search_box {
-  margin: 3.5em auto 0 auto;
+  margin: 3.5em auto 0.25em auto;
   padding: 4em 0;
   background-color: #d9dcde;
   text-align: center;
@@ -48,7 +48,7 @@ input[type='text'] {
 
 #main_body {
   width: 61.5em;
-  margin: 0 auto;
+  margin: 0 auto 0.25em auto;
   background-color: #ecf0f1;
 }
 
@@ -67,14 +67,14 @@ input[type='text'] {
   display: block;
 }
 .album_info h3 {
-  font-size: 1.2em;
+  font-size: 0.8em;
   font-weight: 200;
   display: inline-block;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
 .album_info h2 {
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 400;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -83,6 +83,7 @@ input[type='text'] {
 .album_art {
   float: left;
   height: 100px;
+  width: 100px;
   border: 1px solid #bdc3c7;
   margin-right: 0.5em;
 }

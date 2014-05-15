@@ -20,7 +20,7 @@
 		%script{:id => 'template', :type => 'x-tmpl-mustache'}
 			.result_item{:id => 'info_{{ itemNo }}'}
 				.album_art
-					%img{:src => '{{ artworkUrl100 }}', :alt => '{{ collectionName }}'}
+					%img{:src => '{{ artworkUrl100 }}', :alt => '{{ collectionName }}', :width => '100', :height => '100'}
 				.album_info
 					%h2
 						{{ collectionName }}
