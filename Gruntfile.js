@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: ['js/script.js'],
-                tasks: ['concat:dev']
+                tasks: ['concat:dev', 'uglify:dev']
             }
         },
         haml: {
@@ -86,6 +86,19 @@ module.exports = function(grunt) {
                 src: ['js/*.js'],
                 dest: 'js/bundle.js',
             }
+        },
+        uglify: {
+            dev: {
+                options: {
+                    mangle: true
+                },
+                files: {
+                    'js/bundle.min.js': ['js/bundle.js']
+                }
+            },
+            dist: {
+
+            }
         }
     });
 
@@ -94,5 +107,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-haml');
     grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.registerTask('default', ['haml', 'sass', 'csscomb', 'concat'])
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.registerTask('default', ['haml', 'sass', 'csscomb', 'concat', 'uglify:dev'])
 };
