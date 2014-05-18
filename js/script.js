@@ -68,7 +68,7 @@ function printResult(resultJSON) {
               , originalArt = (artworkURLClean.search(/Feature/gi) == -1 ? 0 : 1)
               , collectionName = (collectionName.length > 25 ? collectionName.substring(0, 25).trim() + '...' : collectionName)
               , html = Mustache.render(template, {
-                    artworkUrl100: resultJSON.results[i].artworkUrl100,
+                    // artworkUrl100: resultJSON.results[i].artworkUrl100,
                     artworkUrl200: artworkURLClean + '200x200-75.jpg',
                     collectionName: collectionName,
                     artistName: artistName,
@@ -93,5 +93,3 @@ function printResult(resultJSON) {
         $('#main_body').append(html);
     }
 }
-
-$('img').unveil();
