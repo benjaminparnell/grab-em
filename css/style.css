@@ -38,12 +38,14 @@ header
     background-color: #d9dcde;
 }
 
-input[type='text']
+#artist_name
 {
     font-size: 1.1em;
     font-weight: 200;
 
     padding: .2em;
+
+    outline: none;
 }
 
 #search_button

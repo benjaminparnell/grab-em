@@ -3,13 +3,14 @@
 	%head
 		%title Grab 'em
 		%meta{:name => 'viewport', :content => 'initial-scale=1.0, user-scalable=no, width=device-width'}
-		%link{:rel => 'stylesheet', :href => 'css/normalize.css'}
+		%link{:rel => 'stylesheet', :href => 'css/normalize.min.css'}
 		%link{:rel => 'stylesheet', :href => 'css/style.css'}
+		%link{:rel => 'stylesheet', :href => 'css/animate.min.css'}
 	%body
 		%header
 			/ this is where we put the header bar
 			Grab 'em
-		%section#search_box
+		%section#search_box.animated.fadeInDown
 			%form{:name => 'search_artwork', :action => 'javascript:performSearch()'}
 				%input{:type => 'text', :id => 'artist_name', :placeholder => 'enter search term'}
 				-# %input{:type => 'button', :value => 'Search', :onClick => 'performSearch()'}
@@ -20,7 +21,7 @@
 		%script{:id => 'template', :type => 'x-tmpl-mustache'}
 			.result_item{:id => 'info_{{ itemNo }}'}
 				.album_art
-					%img{:src => '{{ artworkUrl100 }}', :alt => '{{ collectionName }}', :width => '100', :height => '100'}
+					%img{:src => '{{ artworkUrl100 }}', :'data-src-retina' => '{{ artworkUrl200}}', :alt => '{{ collectionName }}', :width => '100', :height => '100'}
 				.album_info
 					%h2
 						{{ collectionName }}
