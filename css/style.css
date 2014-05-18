@@ -69,7 +69,7 @@ header
 
 #main_body
 {
-    width: 61.5em;
+    width: 948px;
     margin: 0 auto .25em auto;
 
     background-color: #ecf0f1;
@@ -81,63 +81,110 @@ header
     display: none;
     float: left;
 
-    width: 19em;
-    height: 102px;
-    margin: .25em;
-    padding: .5em;
+    width: 150px;
+    height: 230px;
+    margin: .5em .25em;
 
-    background-color: white;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .15);
+       -moz-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .15);
+            box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .15);
+}
+
+.result_item:hover
+{
+    -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .7);
+       -moz-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .7);
+            box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .7);
 }
 
 .album_info
 {
     display: block;
+    overflow: hidden;
+
+    padding: .5em .5em;
 }
-.album_info h3
+
+.inner_info
+{
+    padding-bottom: .5em;
+
+    border-bottom: 1px solid #cbd0d3;
+}
+.inner_info h3
 {
     font-size: .7em;
     font-weight: 200;
 
-    display: inline-block;
+    overflow: hidden;
+
+    white-space: nowrap;
 
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
 }
-.album_info h2
+.inner_info h2
 {
-    font-size: .8em;
-    font-weight: 400;
+    font-size: .9em;
+    font-weight: 200;
+
+    overflow: hidden;
+
+    white-space: nowrap;
 
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
+}
+
+.fade
+{
+    position: relative;
+    z-index: 1;
+    top: -45px;
+    left: 126px;
+
+    width: 1em;
+    height: 2.2em;
+
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white);
+    background:    -moz-linear-gradient(left, rgba(255, 255, 255, 0), white);
+    background:         linear-gradient(left, rgba(255, 255, 255, 0), white);
 }
 
 .album_art
 {
     float: left;
 
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-right: .5em;
 
-    border: 1px solid #bdc3c7;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.artwork_img
+{
+    width: 150px;
+    height: 150px;
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .size_buttons_container
 {
     position: relative;
     z-index: 1;
-
-    height: 68%;
+    top: -34px;
+    left: .5em;
 }
 
 .size_buttons
 {
     font-size: .6em;
-
-    position: absolute;
-    bottom: 0;
-    left: 114px;
 
     display: block;
     float: left;

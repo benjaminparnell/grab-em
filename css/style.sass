@@ -54,56 +54,89 @@ header
 	background-color: darken($kulay-blue, 10%)
 
 #main_body
-	width: 61.5em
+	width: 948px
 	margin: 0 auto 0.25em auto
 	background-color: $kulay-bg
 
 .result_item
-	padding: 0.5em
-	margin: 0.25em
-	height: 102px
-	width: 19em
-	background-color: #fff
+	margin: 0.5em 0.25em
+	width: 150px
+	height: 230px
+	border-radius: 4px
+	background-color: darken(#fff, 1%)
 	display: inline-block
 	float: left
 	display: none
+	-webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15)
+	-moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15)
+	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15)
+
+.result_item:hover
+	-webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.70)
+	-moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.70)
+	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.70)
 
 .album_info
 	display: block
+	padding: 0.5em 0.5em
+	overflow: hidden
+
+.inner_info
+	border-bottom: 1px solid lighten($kulay-search, 5%)
+	padding-bottom: 0.5em
 
 	h3
 		font-size: 0.7em
 		font-weight: 200
-		display: inline-block
 		-webkit-margin-before: 0
 		-webkit-margin-after: 0
+		white-space: nowrap
+		overflow: hidden
 
 	h2
-		font-size: 0.8em
-		font-weight: 400
+		font-size: 0.9em
+		font-weight: 200
 		-webkit-margin-before: 0
 		-webkit-margin-after: 0
+		white-space: nowrap
+		overflow: hidden
+
+.fade
+	background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1))
+	background: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1))
+	background: linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1))
+	position: relative
+	top: -45px
+	left: 126px
+	z-index: 1
+	height: 2.2em
+	width: 1em
 
 .album_art
 	float: left
-	height: 100px
-	width: 100px
-	border: 1px solid $kulay-search
+	height: 150px
+	width: 150px
+	border-top-left-radius: 4px
+	border-top-right-radius: 4px
 	margin-right: 0.5em
 
+.artwork_img
+	height: 150px
+	width: 150px
+	border-top-left-radius: 4px
+	border-top-right-radius: 4px
+
 .size_buttons_container
-	position: relative
-	height: 68%
 	z-index: 1
+	position: relative
+	top: -34px
+	left: 0.5em
 
 .size_buttons
 	display: block
 	float: left
 	text-transform: uppercase
 	font-size: 0.6em
-	position: absolute
-	bottom: 0
-	left: 114px
 
 .album_art_button
 	display: inline-block
