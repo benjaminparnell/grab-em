@@ -12,7 +12,8 @@
 		%section#search_box.animated.fadeInDown
 			%form{:id => 'search_form',:name => 'search_artwork', :action => 'javascript:performSearch()'}
 				%input{:type => 'text', :id => 'search_term', :placeholder => 'enter search term', :autofocus => 'true'}
-				%a{:id => 'search_button', :href => 'javascript:performSearch()'} search
+				%a{:id => 'search_button', :href => 'javascript:performSearch()'}
+					%img{:src => 'css/search.svg', :alt => 'SEARCH', :width => '25px'}
 		%section#main_body
 		%script{:id => 'template', :type => 'x-tmpl-mustache'}
 			.result_item{:id => 'info_{{ itemNo }}'}

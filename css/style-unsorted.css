@@ -29,7 +29,7 @@ header {
 }
 
 #search_form {
-  width: 408px;
+  width: 336px;
   margin: 0 auto;
 }
 
@@ -60,7 +60,7 @@ header {
   color: white;
   height: 41px;
   font-weight: 200;
-  padding: 0.75em 1.5em;
+  padding: 0.5em;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   -webkit-box-sizing: border-box;
