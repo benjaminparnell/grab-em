@@ -82,7 +82,7 @@ header {
   margin: 0.5em 0.25em;
   width: 150px;
   height: 230px;
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: white;
   display: inline-block;
   float: left;
@@ -109,12 +109,13 @@ header {
   padding-bottom: 0.5em;
 }
 .inner_info h3 {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 200;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   white-space: nowrap;
   overflow: hidden;
+  color: #7f8c8d;
 }
 .inner_info h2 {
   font-size: 0.9em;
@@ -123,6 +124,7 @@ header {
   -webkit-margin-after: 0;
   white-space: nowrap;
   overflow: hidden;
+  color: #2c3e50;
 }
 
 .fade {
@@ -130,10 +132,10 @@ header {
   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), white);
   background: linear-gradient(left, rgba(255, 255, 255, 0), white);
   position: relative;
-  top: -45px;
+  top: -50px;
   left: 126px;
   z-index: 1;
-  height: 2.2em;
+  height: 2.5em;
   width: 1em;
 }
 
@@ -141,22 +143,22 @@ header {
   float: left;
   height: 150px;
   width: 150px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   margin-right: 0.5em;
 }
 
 .artwork_img {
   height: 150px;
   width: 150px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 .size_buttons_container {
   z-index: 1;
   position: relative;
-  top: -34px;
+  top: -40px;
   left: 0.5em;
 }
 

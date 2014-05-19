@@ -1,5 +1,6 @@
 $kulay-bg: #ecf0f1
 $kulay-text: #2c3e50
+$kulay-asbestos: #7f8c8d
 $kulay-search: #bdc3c7
 $kulay-blue: #3d9ddd
 $kulay-red: #c0392b
@@ -84,7 +85,7 @@ header
 	margin: 0.5em 0.25em
 	width: 150px
 	height: 230px
-	border-radius: 4px
+	border-radius: 2px
 	background-color: #fff
 	display: inline-block
 	float: left
@@ -108,12 +109,13 @@ header
 	padding-bottom: 0.5em
 
 	h3
-		font-size: 0.7em
+		font-size: 0.8em
 		font-weight: 200
 		-webkit-margin-before: 0
 		-webkit-margin-after: 0
 		white-space: nowrap
 		overflow: hidden
+		color: $kulay-asbestos
 
 	h2
 		font-size: 0.9em
@@ -122,36 +124,37 @@ header
 		-webkit-margin-after: 0
 		white-space: nowrap
 		overflow: hidden
+		color: $kulay-text
 
 .fade
 	background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1))
 	background: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1))
 	background: linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1))
 	position: relative
-	top: -45px
+	top: -50px
 	left: 126px
 	z-index: 1
-	height: 2.2em
+	height: 2.5em
 	width: 1em
 
 .album_art
 	float: left
 	height: 150px
 	width: 150px
-	border-top-left-radius: 4px
-	border-top-right-radius: 4px
+	border-top-left-radius: 2px
+	border-top-right-radius: 2px
 	margin-right: 0.5em
 
 .artwork_img
 	height: 150px
 	width: 150px
-	border-top-left-radius: 4px
-	border-top-right-radius: 4px
+	border-top-left-radius: 2px
+	border-top-right-radius: 2px
 
 .size_buttons_container
 	z-index: 1
 	position: relative
-	top: -34px
+	top: -40px
 	left: 0.5em
 
 .size_buttons
