@@ -95,7 +95,7 @@ function printResult(resultJSON) {
         }, 200);
     } else {
         var html = "<div id='no_result'>Sorry, no results found for '<strong>" +
-          $('#artist_name').val() + "</strong>'</div>";
+          $('#search_term').val() + "</strong>'</div>";
         $('#main_body').append(html);
     }
 }
