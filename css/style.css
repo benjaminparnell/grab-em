@@ -31,34 +31,60 @@ header
 #search_box
 {
     margin: 3.5em auto .25em auto;
-    padding: 4em 0;
+    padding: 7em 0 9.5em;
 
     text-align: center;
 
     background-color: #d9dcde;
 }
 
-#artist_name
+#search_form
 {
-    font-size: 1.1em;
+    width: 408px;
+    margin: 0 auto;
+}
+
+#search_term
+{
+    font-size: 1.3em;
     font-weight: 200;
 
+    display: inline-block;
+    float: left;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 41px;
     padding: .2em;
 
+    border: none;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
     outline: none;
 }
 
 #search_button
 {
-    display: inline-block;
+    font-weight: 200;
 
-    margin-top: 1em;
-    padding: .5em 4em;
+    display: inline-block;
+    float: left;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 41px;
+    padding: .75em 1.5em;
 
     text-decoration: none;
     text-transform: uppercase;
 
     color: white;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     background-color: #3d9ddd;
 }
 

@@ -9,19 +9,15 @@
   </head>
   <body>
     <header>
-      <!-- this is where we put the header bar -->
       Grab 'em
     </header>
     <section class='animated fadeInDown' id='search_box'>
-      <form action='javascript:performSearch()' name='search_artwork'>
-        <input id='artist_name' placeholder='enter search term' type='text'>
+      <form action='javascript:performSearch()' id='search_form' name='search_artwork'>
+        <input autofocus='true' id='search_term' placeholder='enter search term' type='text'>
+        <a href='javascript:performSearch()' id='search_button'>search</a>
       </form>
-      <a href='javascript:performSearch()' id='search_button'>Search</a>
-      <!-- search box here -->
     </section>
-    <section id='main_body'>
-      <!-- search results here -->
-    </section>
+    <section id='main_body'></section>
     <script id='template' type='x-tmpl-mustache'>
       <div class='result_item' id='info_{{ itemNo }}'>
         <div class='album_art'>

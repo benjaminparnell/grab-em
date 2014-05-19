@@ -79,11 +79,11 @@ module.exports = function(grunt) {
         },
         concat: {
             dev: {
-                src: ['js/*.js'],
+                src: ['js/jquery-*.js', 'js/mustache.js', 'js/script.js'],
                 dest: 'js/bundle.js',
             },
             dist: {
-                src: ['js/*.js'],
+                src: ['js/jquery-*.js', 'js/mustache.js', 'js/script.js'],
                 dest: 'js/bundle.js',
             }
         },

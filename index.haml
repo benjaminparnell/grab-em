@@ -8,16 +8,12 @@
 		%link{:rel => 'stylesheet', :href => 'css/animate.min.css'}
 	%body
 		%header
-			/ this is where we put the header bar
 			Grab 'em
 		%section#search_box.animated.fadeInDown
-			%form{:name => 'search_artwork', :action => 'javascript:performSearch()'}
-				%input{:type => 'text', :id => 'artist_name', :placeholder => 'enter search term'}
-				-# %input{:type => 'button', :value => 'Search', :onClick => 'performSearch()'}
-			%a{:id => 'search_button', :href => 'javascript:performSearch()'} Search
-			/ search box here
+			%form{:id => 'search_form',:name => 'search_artwork', :action => 'javascript:performSearch()'}
+				%input{:type => 'text', :id => 'search_term', :placeholder => 'enter search term', :autofocus => 'true'}
+				%a{:id => 'search_button', :href => 'javascript:performSearch()'} search
 		%section#main_body
-			/ search results here
 		%script{:id => 'template', :type => 'x-tmpl-mustache'}
 			.result_item{:id => 'info_{{ itemNo }}'}
 				.album_art

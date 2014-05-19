@@ -31,24 +31,46 @@ header
 
 #search_box
 	margin: 3.5em auto 0.25em auto
-	padding: 4em 0
+	padding: 7em 0 9.5em
 	background-color: lighten($kulay-search, 10%)
 	text-align: center
 
-#artist_name
-	font-size: 1.1em
+#search_form
+	width: 408px
+	margin: 0 auto
+
+#search_term
+	font-size: 1.3em
 	padding: 0.2em
 	font-weight: 200
 	outline: none
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	height: 41px
+	display: inline-block
+	float: left
+	border: none
+	border-top-left-radius: 2px
+	border-bottom-left-radius: 2px
+	border-top-right-radius: 0
+	border-bottom-right-radius: 0
 
 #search_button
-	margin-top: 1em
-	padding: 0.5em 4em
 	background-color: $kulay-blue
 	display: inline-block
+	float: left
 	text-transform: uppercase
 	text-decoration: none
 	color: #fff
+	height: 41px
+	font-weight: 200
+	padding: 0.75em 1.5em
+	border-top-right-radius: 2px
+	border-bottom-right-radius: 2px
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
 
 #search_button:hover
 	background-color: darken($kulay-blue, 10%)

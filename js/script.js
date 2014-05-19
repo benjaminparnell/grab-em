@@ -32,7 +32,7 @@ function shake(inputBox) {
 }
 
 function performSearch() {
-    var searchTerm = $('#artist_name').val().trim();
+    var searchTerm = $('#search_term').val().trim();
     if (searchTerm.length > 0) {
         var params = {
             term: searchTerm,
@@ -47,7 +47,7 @@ function performSearch() {
           , script = '<script src="' + url + '"><\/script>';
         $('#search_script').empty().append(script);
     } else {
-        shake('#artist_name');
+        shake('#search_term');
     }
 
 }
